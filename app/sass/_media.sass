@@ -1,0 +1,130 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	// Navigation 
+		.navigation
+			&-wrap
+				display: flex
+
+	//Section About
+	.about-header__img
+		.img-responsive
+				max-width: 160%
+
+	// Section Gallery
+	.gallery
+		&-img
+			margin-bottom: 30px
+			&__text
+				width: 70%
+				padding: 1px 8px
+				small
+					font-size: 14px
+			&__title
+				font-size: 17px
+				letter-spacing: 10px
+			&__link
+				left: 50%
+
+// ≥768px
++media-breakpoint-down(sm)
+	// Navigation
+	.navigation
+		&-logo 
+			display: none
+			&__mobile
+				display: flex				
+		&-mobile 
+			display: flex
+			flex-direction: row-reverse
+			justify-content: space-between
+			&__wrap
+				display: flex
+				align-items: center
+			&__links
+				display: flex
+				flex-direction: column
+				padding: 0
+		 
+
+	// Section title and slogan
+	.section
+		&-title 
+			font-size: 25px
+			letter-spacing: 8px
+			&__slogan
+				font-size: 18px
+
+	// Section About
+	.about
+		&-header
+			padding: 19px
+			text-align: center
+			margin-bottom: 30px
+			&__title
+				font-size: 24px
+			&__slogan
+				font-size: 18px
+			&__img
+				margin-left: 0
+				text-align: center
+				.img-responsive
+					max-width: 80%
+				
+	// Section Gallery
+	.gallery
+		&-img
+			margin-bottom: 30px
+			&__text
+				width: 70%
+				padding: 10px 8px
+				small
+					font-size: 14px
+			&__title
+				font-size: 17px
+				letter-spacing: 10px
+			&__link
+				left: 45%
+
+	// Section Contact
+	.contact
+		padding-bottom: 70px
+		&-form 
+			&__input
+				font-size: 18px
+		
+	// Footer
+	.footer
+		&-copy
+			font-size: 16px
+		&-social 
+			&__icon
+				margin-left: 4px
+				margin-right: 4px
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
